@@ -193,9 +193,9 @@ JK Flip Flop:
 ![jk](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/eaaae609-09d8-4991-874d-781fc3ce8f5f)
 
 T Flip flop:
+![Screenshot 2023-06-01 142607](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/ad66f17b-635c-426a-9836-c44a58d67cc5)
 
 
-![T](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/8a4edb4e-a431-4f7e-80b3-a9628616336f)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS
