@@ -120,51 +120,62 @@ RegisterNumber: 212222230165 */
 ```
 # SR Flip Flop:
 ```
-module flipflop(S,R,clock,Q,Qbar);
-input S,R,clock;
-output Q,Qbar;
-wire X,Y;
-nand(X,S,clock);
-nand(Y,R,clock);
-nand(Q,X,Qbar);
-nand(Qbar,Y,Q);
-endmodule
+module flipflops(S,R,clk,Q,Qbar);
+	input S,R,clk;
+	output reg Q;
+	output reg Qbar;
+	initial Q=0;
+	initial Qbar=1;
+	always @(posedge clk)
+	begin
+	Q=S|((~R)&Q);
+	Qbar=R|((~S)&(Qbar));
+	end
+	endmodule
 ```
 # D Flip Flop:
 ```
-module DF(D,clock,Q,Qbar);
-input D,clock;
-output Q,Qbar;
-assign Dbar = ~D;
-wire X,Y;
-nand(X,D,clock);
-nand(Y,Dbar,clock);
-nand(Q,X,Qbar);
-nand(Qbar,Y,Q);
+module flipflops(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
 endmodule
 ```
 # JK Flip Flop:
 ```
-module JK(J,K,clock,Q,Qbar);
-input J,K,clock;
-output Q,Qbar;
-wire P,S;
-nand(P,J,clock,Qbar);
-nand(S,K,clock,Q);
-nand(Q,P,Qbar);
-nand(Qbar,S,Q);
+module flipflops(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
 endmodule
 ```
 # T Flip Flop:
 ```
-module TB(T,clock,Q,Qbar);
-input T,clock;
-output Q,Qbar;
-wire A,B;
-nand(A,T,clock,Qbar);
-nand(B,T,clock,Q);
-nand(Q,A,Qbar);
-nand(Qbar,B,Q);
+module flipflops(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(T&(~Q))|((~T)&Q);
+Qbar=((~T)&Qbar)|(T&(~Qbar));
+end
 endmodule
 ```
 
