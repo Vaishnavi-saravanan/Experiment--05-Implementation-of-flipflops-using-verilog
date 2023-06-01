@@ -181,20 +181,21 @@ endmodule
 
 ### RTL LOGIC FOR FLIPFLOPS 
 SR Flip Flop:
+![sr](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/8cd309d1-2a8a-4b52-a122-58057d75d2ae)
 
-![image](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/c49bd5a7-125d-46de-aa0e-8ebb213b5bbd)
+
 
 D Flip Flop:
+![d](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/6596fc68-10ab-4e98-a943-8af9d2d9bebb)
 
-![image](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/9309fa1a-141a-42f1-8501-c26baf026aba)
 
 JK Flip Flop:
-
-![image](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/fb4b0be6-0670-4a63-ab76-26ee4a10a3e9)
+![jk](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/eaaae609-09d8-4991-874d-781fc3ce8f5f)
 
 T Flip flop:
 
-![image](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/15ba1991-dd81-4bb2-93da-6c55b2d50dde)
+
+![T](https://github.com/Vaishnavi-saravanan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118541897/8a4edb4e-a431-4f7e-80b3-a9628616336f)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS
